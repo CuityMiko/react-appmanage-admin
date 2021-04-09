@@ -17,6 +17,6 @@ git commit -m 'deploy'
 #git push -f git@github.com:NLRX-WJC/Learn-Vue-Source-Code.git master:gh-pages
 
 # 如果使用 travis 持续集成
-git push -f https://${GITHUB_TOKEN}@github.com/NLRX-WJC/react-antd-admin-template.git master:gh-pages
+git push -f https://${GITHUB_TOKEN}@github.com/NLRX-WJC/react-appmanage-admin.git master:gh-pages
 
 cd -
