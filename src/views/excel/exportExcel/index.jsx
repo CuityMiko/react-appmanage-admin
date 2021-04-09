@@ -12,7 +12,7 @@ import {
   Collapse,
 } from "antd";
 
-import { excelList } from "@/api/excel";
+import { excelList } from "@/services/excel";
 const { Panel } = Collapse;
 const columns = [
   {

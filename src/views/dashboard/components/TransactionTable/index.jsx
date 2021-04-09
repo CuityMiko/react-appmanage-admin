@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Table, Tag } from "antd";
-import { transactionList } from "@/api/remoteSearch";
+import { transactionList } from "@/services/remoteSearch";
 
 const columns = [
   {

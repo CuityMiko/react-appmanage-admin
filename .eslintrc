@@ -6,7 +6,7 @@
         "components": [ "Anchor" ]
       }],
       "no-console": "warn",
-      "valid-jsdoc": "warn"
+      "valid-jsdoc": "off"
     }
   }
   
