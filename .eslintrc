@@ -1,0 +1,12 @@
+{
+    "extends": "react-app",
+    "rules": {
+      "jsx-a11y/href-no-hash": "off",
+      "jsx-a11y/anchor-has-content": [ 2, {
+        "components": [ "Anchor" ]
+      }],
+      "no-console": "warn",
+      "valid-jsdoc": "warn"
+    }
+  }
+  
