@@ -97,7 +97,7 @@ class Meun extends Component {
     });
   };
 
-  handleMenuSelect = ({ key = "/dashboard" }) => {
+  handleMenuSelect = ({ key = "/home" }) => {
     let menuItem = getMenuItemInMenuListByProperty(menuList, "path", key);
     this.props.addTag(menuItem);
   };

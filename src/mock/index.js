@@ -16,7 +16,7 @@ Mock.mock(/\/user\/validatUserID/, "post", loginAPI.ValidatUserID);
 Mock.mock(/\/user\/add/, "post", loginAPI.addUser);
 
 
-// dashboard
+// home
 Mock.mock(/\/transaction\/list/, "get", remoteSearchAPI.transactionList);
 
 // excel

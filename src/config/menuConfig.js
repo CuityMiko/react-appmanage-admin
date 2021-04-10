@@ -5,32 +5,9 @@
 const menuList = [
   {
     title: "首页",
-    path: "/dashboard",
+    path: "/home",
     icon: "home",
     roles:["admin","editor","guest"]
-  },
-  {
-    title: "图表",
-    path: "/charts",
-    icon: "area-chart",
-    roles:["admin","editor"],
-    children: [
-      {
-        title: "键盘图表",
-        path: "/charts/keyboard",
-        roles:["admin","editor"],
-      },
-      {
-        title: "折线图",
-        path: "/charts/line",
-        roles:["admin","editor"],
-      },
-      {
-        title: "混合图表",
-        path: "/charts/mix-chart",
-        roles:["admin","editor"],
-      },
-    ],
   },
   // {
   //   title: "路由嵌套",

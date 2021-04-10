@@ -188,15 +188,17 @@ class Excel extends Component {
           </Panel>
         </Collapse>
         <br />
-        <Table
-          bordered
-          columns={columns}
-          rowKey={(record) => record.id}
-          dataSource={this.state.list}
-          pagination={false}
-          rowSelection={rowSelection}
-          loading={this.state.downloadLoading}
-        />
+        <div className="table-container">
+          <Table
+            bordered
+            columns={columns}
+            rowKey={(record) => record.id}
+            dataSource={this.state.list}
+            pagination={false}
+            rowSelection={rowSelection}
+            loading={this.state.downloadLoading}
+          />
+        </div>
       </div>
     );
   }

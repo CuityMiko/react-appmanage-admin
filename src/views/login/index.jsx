@@ -52,7 +52,7 @@ const Login = (props) => {
   };
 
   if (token) {
-    return <Redirect to="/dashboard" />;
+    return <Redirect to="/home" />;
   }
   return (
     <DocumentTitle title={"用户登录"}>
