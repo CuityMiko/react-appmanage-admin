@@ -2,7 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import Content from "./Content";
 import Header from "./Header";
-import RightPanel from "./RightPanel";
+// import RightPanel from "./RightPanel";
 import Sider from "./Sider";
 import TagsView from "./TagsView";
 import { Layout } from "antd";
@@ -14,8 +14,13 @@ const Main = (props) => {
       <Layout>
         <Header />
         {tagsView ? <TagsView /> : null}
-        <Content />
-        <RightPanel />
+        <div style={{'marginBottom': '51px'}}>
+          <Content />
+        </div>
+        {/* <RightPanel /> */}
+        <Layout.Footer style={{textAlign:'center', 'position': 'fixed', 'width': '89%', bottom: '0', backgroundColor: '#fff'}}>
+        App Manage Admin ©2021 Created by Ant Lyzh
+        </Layout.Footer>
       </Layout>
     </Layout>
   );
