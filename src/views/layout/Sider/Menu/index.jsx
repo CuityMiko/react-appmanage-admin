@@ -124,6 +124,7 @@ class Meun extends Component {
                       key={item.key}
                       draggableId={item.key}
                       index={index}
+                      isDragDisabled
                     >
                       {(provided, snapshot) => (
                         <div

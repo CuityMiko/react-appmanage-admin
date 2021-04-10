@@ -10,62 +10,6 @@ const menuList = [
     roles:["admin","editor","guest"]
   },
   {
-    title: "引导页",
-    path: "/guide",
-    icon: "key",
-    roles:["admin","editor"]
-  },
-  {
-    title: "权限测试",
-    path: "/permission",
-    icon: "lock",
-    children: [
-      {
-        title: "权限说明",
-        path: "/permission/explanation",
-        roles:["admin"]
-      },
-      {
-        title: "admin页面",
-        path: "/permission/adminPage",
-        roles:["admin"]
-      },
-      {
-        title: "guest页面",
-        path: "/permission/guestPage",
-        roles:["guest"]
-      },
-      {
-        title: "editor页面",
-        path: "/permission/editorPage",
-        roles:["editor"]
-      },
-    ],
-  },
-  {
-    title: "组件",
-    path: "/components",
-    icon: "appstore",
-    roles:["admin","editor"],
-    children: [
-      {
-        title: "富文本",
-        path: "/components/richTextEditor",
-        roles:["admin","editor"],
-      },
-      {
-        title: "Markdown",
-        path: "/components/Markdown",
-        roles:["admin","editor"],
-      },
-      {
-        title: "拖拽列表",
-        path: "/components/draggable",
-        roles:["admin","editor"],
-      },
-    ],
-  },
-  {
     title: "图表",
     path: "/charts",
     icon: "area-chart",
