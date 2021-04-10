@@ -10,10 +10,10 @@ import menuList from "@/config/menuConfig";
 const { Content } = Layout;
 
 const getPageTitle = (menuList, pathname) => {
-  let title = "Ant Design Pro";
+  let title = process.env.REACT_APP_PROJECT_NAME;
   let item = getMenuItemInMenuListByProperty(menuList, "path", pathname);
   if (item) {
-    title = `${item.title} - Ant Design Pro`;
+    title = `${item.title} - ${process.env.REACT_APP_PROJECT_NAME}`;
   }
   return title;
 };

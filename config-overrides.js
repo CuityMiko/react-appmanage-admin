@@ -56,13 +56,14 @@ module.exports = {
     webpack: override(
         addDecoratorsLegacy(),
         disableEsLint(),
-        addBundleVisualizer({}, true),
-        adjustWorkbox(wb =>
-            Object.assign(wb, {
-                skipWaiting: true,
-                exclude: (wb.exclude || []).concat('index.html')
-            })
-        ),
+        // addBundleVisualizer({}, true), // webpack-bundle-analyzer
+        // PWA
+        // adjustWorkbox(wb =>
+        //     Object.assign(wb, {
+        //         skipWaiting: true,
+        //         exclude: (wb.exclude || []).concat('index.html')
+        //     })
+        // ),
         // 针对antd实现按需打包: 根据import来打包(使用babel-plugin-import)
         fixBabelImports("import", {
             libraryName: "antd",

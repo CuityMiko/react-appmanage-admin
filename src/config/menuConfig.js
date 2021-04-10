@@ -143,12 +143,6 @@ const menuList = [
     ],
   },
   {
-    title: "Zip",
-    path: "/zip",
-    icon: "file-zip",
-    roles:["admin","editor"]
-  },
-  {
     title: "用户管理",
     path: "/user",
     icon: "usergroup-add",

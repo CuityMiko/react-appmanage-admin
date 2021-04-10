@@ -5,7 +5,7 @@ const Logo = () => {
   return (
     <div className="sidebar-logo-container">
       <img src={logo} className="sidebar-logo" alt="logo" />
-      <h1 className="sidebar-title">App管理后台</h1>
+      <h1 className="sidebar-title">{process.env.REACT_APP_PROJECT_NAME}</h1>
     </div>
   );
 };
