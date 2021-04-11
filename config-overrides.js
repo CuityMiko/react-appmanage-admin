@@ -5,9 +5,9 @@ const {
     addWebpackAlias,
     overrideDevServer,
     addDecoratorsLegacy,
-    disableEsLint,
-    addBundleVisualizer,
-    adjustWorkbox
+    disableEsLint
+    // addBundleVisualizer,
+    // adjustWorkbox
 } = require("customize-cra");
 const path = require("path");
 
@@ -17,18 +17,18 @@ function resolve(dir) {
 
 process.env.CI = "false";
 
-const addCustomize = () => (config) => {
-    if (config.output.publicPath) {
-        config.output.publicPath =
-            process.env.NODE_ENV === "production" ?
-            "/react-appmanage-admin/" :
-            "/";
-    }
-    if (config.resolve) {
-        config.resolve.extensions.push(".jsx");
-    }
-    return config;
-};
+// const addCustomize = () => (config) => {
+//     if (config.output.publicPath) {
+//         config.output.publicPath =
+//             process.env.NODE_ENV === "production" ?
+//             "/react-appmanage-admin/" :
+//             "/";
+//     }
+//     if (config.resolve) {
+//         config.resolve.extensions.push(".jsx");
+//     }
+//     return config;
+// };
 
 /**
  * 代理配置
@@ -91,8 +91,8 @@ module.exports = {
             "styles": resolve('src/styles'),
             "utils": resolve('src/utils'),
             "views": resolve('src/views')
-        }),
-        addCustomize()
+        })
+        // addCustomize()
     ),
     devServer: overrideDevServer(
         devServerConfig()
