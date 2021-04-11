@@ -45,7 +45,8 @@
         "build": "react-app-rewired --max-old-space-size=2048 build ",
         "test": "react-app-rewired test",
         "eject": "react-scripts eject",
-        "commit": "git cz"
+        "commit": "git cz",
+        "prepare": "husky install"
     },
     "browserslist": {
         "production": [
@@ -66,7 +67,11 @@
         "cross-env": "^7.0.3",
         "customize-cra": "^0.9.1",
         "cz-conventional-changelog": "^3.0.2",
+        "eslint-config-prettier": "^8.1.0",
+        "husky": ">=6",
+        "lint-staged": ">=10",
         "mockjs": "^1.1.0",
+        "prettier": "^2.2.1",
         "react-app-rewired": "^2.1.5",
         "user-agent": "^1.0.4",
         "webpack-bundle-analyzer": "^4.4.0"
@@ -75,5 +80,8 @@
         "commitizen": {
             "path": "./node_modules/cz-conventional-changelog"
         }
+    },
+    "lint-staged": {
+        "*.{js,jsx,css,md}": "prettier --write"
     }
 }
