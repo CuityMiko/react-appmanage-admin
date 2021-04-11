@@ -11,6 +11,12 @@ const menuList = [
     roles:["admin","editor","guest"]
   },
   {
+    title: "Excel",
+    path: "/excel",
+    icon: "file-excel",
+    roles:["admin","editor"]
+  },
+  {
     title: "表格",
     path: "/table",
     icon: "table",
@@ -27,12 +33,6 @@ const menuList = [
         roles:["admin","editor"],
       },
     ],
-  },
-  {
-    title: "Excel",
-    path: "/excel",
-    icon: "file-excel",
-    roles:["admin","editor"]
   }
 ];
 export default menuList;
