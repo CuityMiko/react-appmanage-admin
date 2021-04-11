@@ -59,7 +59,7 @@ const Login = (props) => {
       <div className="login-container">
         <Form onSubmit={handleSubmit} className="content">
           <div className="title">
-            <h2>用户登录</h2>
+            <h2>{`${process.env.REACT_APP_PROJECT_NAME}登录`}</h2>
           </div>
           <Spin spinning={loading} tip="登录中...">
             <Form.Item>
@@ -112,10 +112,6 @@ const Login = (props) => {
             </Form.Item>
             <Form.Item>
               <span>账号 : admin 密码 : 随便填</span>
-              <br />
-              <span>账号 : editor 密码 : 随便填</span>
-              <br />
-              <span>账号 : guest 密码 : 随便填</span>
             </Form.Item>
           </Spin>
         </Form>
