@@ -4,11 +4,12 @@
   "private": true,
   "scripts": {
     "start": "cross-env PORT=5001 react-app-rewired start",
-    "build": "react-app-rewired --max-old-space-size=2048 build ",
+    "build": "react-app-rewired --max-old-space-size=2048 build",
     "test": "react-app-rewired test",
     "eject": "react-scripts eject",
     "commit": "git cz",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "mock-server": "json-server __json_server_mock__/db.json --watch"
   },
   "lint-staged": {
     "*.{js,jsx,css,md,json}": "prettier --write"
