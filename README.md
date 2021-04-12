@@ -92,13 +92,21 @@ npm run build
 npm run mock-server
 ```
 
-# 代码提交规范 + commitlint + commitizen
+# 代码提交规范
+
+[commitlint](https://github.com/conventional-changelog/commitlint)
+[commitizen](https://github.com/commitizen-tools/commitizen)
 
 ```
+commitlint:
 eg.
 git add --all
 git commit -m 'feat: 提交功能'
 git push
+commitizen:
+eg.
+git add --all
+npm run commit
 ```
 
 | 规范名   | 描述                                                    |
