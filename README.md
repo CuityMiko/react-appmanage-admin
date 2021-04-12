@@ -21,10 +21,6 @@
 - Excel
   - 导出excel
   - 导入excel
-  - 前端可视化excel
-
-- Zip
-  - 导出zip
 
 - 错误页面
   - 404
@@ -46,10 +42,10 @@
 │   ├─ favicon.ico            # favicon图标
 │   └─ index.html             # html模板
 ├─ src                        # 项目源代码
-│   ├─ api                    # 所有请求
+│   ├─ services               # 所有请求
 │   ├─ assets                 # 图片 字体等静态资源
 │   ├─ components             # 全局公用组件
-│   ├─ config                 # 全局配置
+│   ├─ router                 # 全局配置
 │   │   ├─ menuConfig.js      # 导航菜单配置
 │   │   └─ routeMap.js        # 路由配置
 │   ├─ lib                    # 第三方库按需加载
@@ -64,8 +60,9 @@
 ├── .env.development          # 开发环境变量配置
 ├── .env.production           # 生产环境变量配置
 ├── config-overrides.js       # 对cra的webpack自定义配置
-├── deploy.sh                 # CI部署脚本
-├── .travis.yml               # 自动化CI配置
+├── .eslintrc                 # eslint相关配置
+├── .prettierrc.json          # prettier相关配置
+├── commitlint.config.js      # 提交代码规范
 └── package.json              # package.json
 ```
 
