@@ -74,7 +74,7 @@
 # 安装依赖
 yarn install
 
-# 切换淘宝源，解决 npm 下载速度慢的问题
+# 切换淘宝源，解决 npm 下载速度慢的问题 测试
 yarn install --registry=https://registry.npm.taobao.org
 
 # 启动服务
