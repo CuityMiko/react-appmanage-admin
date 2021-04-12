@@ -38,6 +38,8 @@
 # 目录结构
 
 ```bash
+├─ __json_server_mock__       # json-server相关mock文件
+├─ .husky                     # husky相关hook配置
 ├─ public                     # 静态资源
 │   ├─ favicon.ico            # favicon图标
 │   └─ index.html             # html模板
@@ -77,8 +79,13 @@ yarn install --registry=https://registry.npm.taobao.org
 
 # 启动服务
 npm start
-
 # 启动完成后会自动打开浏览器访问 (http://localhost:5001)
+
+# 打包
+npm run build
+
+# 启动mock服务
+npm run mock-server
 ```
 
 # 代码提交规范 + commitlint
