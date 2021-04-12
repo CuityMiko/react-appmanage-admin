@@ -81,5 +81,5 @@ yarn install --registry=https://registry.npm.taobao.org
 # 启动服务
 npm start
 
-# 启动完成后会自动打开浏览器访问 [http://localhost:5001](http://localhost:5001)
+# 启动完成后会自动打开浏览器访问 (http://localhost:5001)
 ```
