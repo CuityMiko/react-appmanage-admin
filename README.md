@@ -88,4 +88,6 @@ npm start
 
 ```
 commitlint
+commitizen
+
 ```
