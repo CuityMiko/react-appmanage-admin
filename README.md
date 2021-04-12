@@ -88,6 +88,5 @@ npm start
 
 ```
 commitlint
-commitizen
-
+https://github.com/luoxue-victor/commitlint
 ```
