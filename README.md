@@ -83,3 +83,9 @@ npm start
 
 # 启动完成后会自动打开浏览器访问 (http://localhost:5001)
 ```
+
+# 代码提交规范
+
+```
+commitlint
+```
