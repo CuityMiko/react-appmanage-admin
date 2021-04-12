@@ -8,11 +8,12 @@
     "test": "react-app-rewired test",
     "eject": "react-scripts eject",
     "commit": "git cz",
-    "prepare": "husky install",
+    "prepare": "husky install && npx mrm lint-staged",
     "mock-server": "json-server __json_server_mock__/db.json --watch"
   },
   "lint-staged": {
-    "*.{js,jsx,css,md,json}": "prettier --write"
+    "*.{js,jsx,css,md,json}": "prettier --write",
+    "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
   },
   "config": {
     "commitizen": {
