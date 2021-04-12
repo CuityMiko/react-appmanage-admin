@@ -1,5 +1,7 @@
-# Node版本
+# Node 版本
+
 node >= 12
+
 # 功能
 
 ```bash
@@ -90,7 +92,7 @@ npm run build
 npm run mock-server
 ```
 
-# 代码提交规范 + commitlint
+# 代码提交规范 + commitlint + commitizen
 
 ```
 eg.
