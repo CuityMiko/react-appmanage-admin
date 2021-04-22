@@ -7,8 +7,8 @@ import "./index.less";
 import { login, getUserInfo } from "@/store/actions";
 
 const Login = (props) => {
-  const { form, token, login, getUserInfo } = props;
-  const { getFieldDecorator } = form;
+  const {form, token, login, getUserInfo } = props;
+  const { getFieldDecorator} = form;
 
   const [loading, setLoading] = useState(false);
 
@@ -27,7 +27,7 @@ const Login = (props) => {
   };
 
   // 获取用户信息
-  const handleUserInfo = (token) => {
+  const handleUserInfo =(token) => {
     getUserInfo(token)
       .then((data) => {})
       .catch((error) => {
