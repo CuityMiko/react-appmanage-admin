@@ -8,15 +8,12 @@
     "test": "react-app-rewired test",
     "eject": "react-scripts eject",
     "commit": "git cz",
-    "mock-server": "json-server __json_server_mock__/db.json --watch"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+    "mock-server": "json-server __json_server_mock__/db.json --watch",
+    "prepare": "husky install"
   },
   "lint-staged": {
-    "*.{js,jsx,css,md,json}": "prettier --write"
+    "*.{js,jsx,css,md,json}": "prettier --write",
+    "*.{js,css,md}": "prettier --write"
   },
   "config": {
     "commitizen": {
@@ -71,7 +68,7 @@
     "customize-cra": "^0.9.1",
     "cz-conventional-changelog": "^3.0.2",
     "eslint-config-prettier": "^8.1.0",
-    "husky": "^5.0.0",
+    "husky": ">=6",
     "lint-staged": ">=10",
     "mockjs": "^1.1.0",
     "prettier": "^2.2.1",
