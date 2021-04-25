@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
-import { Provider } from 'react-redux'
-import { ConfigProvider } from 'antd'
-import zhCN from 'antd/es/locale/zh_CN'
-import store from './store'
-import Router from './router'
+import React, { Component } from "react";
+import { Provider } from "react-redux";
+import { ConfigProvider } from "antd";
+import zhCN from "antd/es/locale/zh_CN";
+import store from "./store";
+import Router from "./router";
 
 class App extends Component {
   render() {
@@ -13,8 +13,8 @@ class App extends Component {
           <Router />
         </Provider>
       </ConfigProvider>
-    )
+    );
   }
 }
 
-export default App
+export default App;
